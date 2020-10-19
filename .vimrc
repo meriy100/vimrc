@@ -142,3 +142,16 @@ let g:indentLine_color_term = 251
 
 " GVim
 let g:indentLine_color_gui = '#BFBFBF'
+
+" winresizer
+let g:winresizer_vert_resize=3
+let g:winresizer_horiz_resize=1
+
+
+" NERDTree
+let NERDTreeShowHidden=1 " 隠しファイル表示
+nnoremap <Leader>1 :NERDTree<CR>
+
+
+" deopleate
+let g:deoplete#enable_at_startup = 1

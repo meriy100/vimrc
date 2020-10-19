@@ -3,9 +3,16 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+" file 検索
 Plug 'ctrlpvim/ctrlp.vim'
+
+" 括弧系補完
 Plug 'tpope/vim-surround'
+
+" 差分行表示
 Plug 'airblade/vim-gitgutter'
+
+" マテリアルテーマ
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 " インデントガイド
@@ -15,6 +22,24 @@ Plug 'lilydjwg/colorizer'
 
 " git commands
 Plug 'tpope/vim-fugitive'
+
+" Window Resize
+Plug 'simeji/winresizer'
+
+" editor config
+Plug 'editorconfig/editorconfig-vim'
+
+" file tree
+Plug 'preservim/nerdtree'
+
+" コード補完
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " Initialize plugin system
 call plug#end()
