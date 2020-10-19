@@ -3,8 +3,10 @@
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-Plug 'wincent/command-t'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'tpope/vim-surround'
+Plug 'airblade/vim-gitgutter'
+Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
 " Initialize plugin system
 call plug#end()
-

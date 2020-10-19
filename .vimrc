@@ -117,3 +117,11 @@ nnoremap <Leader>jj <C-w>j<CR>
 nnoremap <Leader>jk <C-w>k<CR>
 nnoremap <Leader>jl <C-w>l<CR>
 
+" color
+
+if (has('termguicolors'))
+  set termguicolors
+endif
+syntax on
+set background=dark
+colorscheme material
