@@ -117,6 +117,8 @@ nnoremap <Leader>jj <C-w>j<CR>
 nnoremap <Leader>jk <C-w>k<CR>
 nnoremap <Leader>jl <C-w>l<CR>
 
+nnoremap ; :
+
 " color
 
 if (has('termguicolors'))
@@ -124,4 +126,12 @@ if (has('termguicolors'))
 endif
 syntax on
 set background=dark
+
 colorscheme material
+
+" CtrP settings
+let g:ctrlp_map = '<Nop>'
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+nnoremap <Leader>o :CtrlP<CR>
+
