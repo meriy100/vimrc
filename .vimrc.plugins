@@ -8,5 +8,8 @@ Plug 'tpope/vim-surround'
 Plug 'airblade/vim-gitgutter'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 
+" インデントガイド
+Plug 'yggdroot/indentline'
+
 " Initialize plugin system
 call plug#end()
