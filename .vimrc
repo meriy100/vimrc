@@ -155,3 +155,8 @@ nnoremap <Leader>1 :NERDTree<CR>
 
 " deopleate
 let g:deoplete#enable_at_startup = 1
+call deoplete#custom#source('buffer',
+\ 'min_pattern_length', 100)
+
+call deoplete#custom#option({  'max_list': 10
+\ })
