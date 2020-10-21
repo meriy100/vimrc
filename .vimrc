@@ -129,6 +129,8 @@ set background=dark
 
 colorscheme material
 highlight Comment  guifg=#BFBFBF ctermfg=251
+highlight Visual   term=reverse ctermfg=231 ctermbg=239 guifg=#eeffff guibg=#314549
+highlight LineNr   term=underline ctermfg=251 guifg=#BFBFBF
 
 " CtrP settings
 let g:ctrlp_map = '<Nop>'
