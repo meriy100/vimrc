@@ -10,3 +10,4 @@ fi
 ln -sf $(pwd)/.vimrc $HOME/.vimrc
 ln -sf $(pwd)/.vimrc.plugins $HOME/.vimrc.plugins
 
+pip3 install --user pynvim
